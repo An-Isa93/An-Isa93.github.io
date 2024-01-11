@@ -1,0 +1,95 @@
+.form-content {
+
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+}
+
+.block {
+  background-color: rgb(252, 249, 249);
+  /* Color de fondo del formulario */
+  border: 1px solid #ccc;
+  /* Borde del formulario */
+  padding: 20px;
+  border-radius: 5px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Sombra */
+  text-align: center;
+  width: 75%;
+
+}
+
+.form-content h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.label-F {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+
+}
+
+.input-F {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 10;
+  background: none;
+  width: 75%;
+  font-family: "Open Sans";
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+textarea {
+  border: none;
+  width: 75%;
+  border-radius: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.input-F:focus,
+textarea:focus,
+textarea:hover {
+  outline: 1px solid #1E92E9;
+  background-color: rgba(233, 236, 238, 0.911);
+  ;
+}
+
+.btn-F {
+  background-color: #007BFF;
+  /* Color de fondo del botón */
+  color: #fff;
+  /* Color del texto del botón */
+  border: none;
+  border-radius: -5% !important;
+  cursor: pointer;
+  width: 30%;
+  height: 30px;
+}
+
+.btn-F :hover,
+.btn-F:hover {
+  background-color: #0056b3;
+  /* Cambiar el color de fondo en el hover */
+}

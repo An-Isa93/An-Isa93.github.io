@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../Imagenes/logo.png" type="image/jpg">
+  <title>Cuidado con el Bisonte</title>
+  <!--Link al css-->
+
+  <link rel="stylesheet" href="../estilos/index.css">
+  <link rel="stylesheet" href="../estilos/formulario.css">
+  <!--Box icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+  <header>
+    <img src="../Imagenes/logo.png" class="logo">
+    <H1 class="h1-titulo"> Cuidado con el bisonte</H1>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#">Temporadas <i class="down"></i></a>
+          <!-- MENU DESPEGABLE -->
+          <ul>
+            <li><a href="../Temporadas/Primavera-Verano.html">Primavera-Verano</a></li>
+            <li><a href="../Temporadas/Otoño-Invierno.html">Otoño-Invierno</a></li>
+          </ul>
+        </li>
+
+        <li><a>Niños<i class="down"></i></a>
+          <!-- MENU DESPEGABLE -->
+          <ul>
+            <li><a href="../niños/NiñosPantalones.html">Pantalones</a></li>
+            <li><a href="../niños/NiñosShorts.html">Shorts</a></li>
+            <li><a href="../niños/NiñosCamisas.html">Camisas</a></li>
+            <li><a href="../niños/NiñosPijamas.html">Pijamas</a></li>
+            <li><a href="../niños/NiñosZapatos.html">Zapatos</a></li>
+
+          </ul>
+        </li>
+        <li><a>Niñas<i class="down"></i></a>
+          <!-- MENU DESPEGABLE -->
+          <ul>
+            <li><a href="../niñas/NiñasPantalones.html">Pantalones</a></li>
+            <li><a href="../niñas/NiñasVestidos.html">Vestidos</a></li>
+            <li><a href="../niñas/NiñasFS.html">Faldas y Shorts</a></li>
+            <li><a href="../niñas/NiñasBlusas.html">Blusas</a></li>
+            <li><a href="../niñas/NiñasPijamas.html">Pijamas</a></li>
+            <li><a href="../niñas/NiñasZapatos.html">Zapatos</a></li>
+
+        </li>
+      </ul>
+
+      <li><a href="#">Acerca de<i class="down"></i></a>
+        <ul>
+          <li><a href="Contacto/quienS.html">¿Quienes somos?</a></li>
+
+        </ul>
+      </li>
+      <li><a href="#">Contacto<i class="down"></i></a>
+        <!-- MENU DESPEGABLE -->
+        <ul>
+          <li><a href="../Contacto/contacto.html">Dudas o Sujerencias</a></li>
+          <li><a href="../Contacto/sucursales.html">Sucursales</a>
+            <ul>
+              <li><a href="">Ubicación</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <img src="../Imagenes/bolsa.png" class="icono" onmouseover="this.src='../Imagenes/bolsaA.png'"
+          onmouseout="this.src='../Imagenes/bolsa.png'" id="cart-icon"></img>
+      </li>
+      <!--Carrito-->
+      <div class="cart">
+        <h2 class="cart-title">Tus Articulos</h2>
+        <!--Contenido-->
+        <div class="cart-content">
+
+        </div>
+
+        <!--Total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+
+        <!--Buy button-->
+        <button type="button" class="btn-buy">Compra ahora</button>
+        <!--Cart Close-->
+        <i class='bx bx-x' id="close-cart"></i>
+      </div>
+      <li> <input type="text" id="buscar" placeholder="Buscar"></li>
+      <li> <img class="icono2" src="../Imagenes/lupa2.png"></li>
+    </nav>
+  </header>
+
+
+  <div class="form-content">
+    <div class="block">
+      <h2>Dudas o sugerencias</h2>
+
+      <form action="https://formsubmit.co/tecnologiasmultimedia9@gmail.com" method="POST">
+        <label for="name" class="label-F">Nombre</label>
+        <input type="text" name="Nombre" id="name" class="input-F">
+
+        <label for="email" class="label-F">Correo Electronico</label>
+        <input type="email" name="email" id="email" class="input-F">
+
+        <label for="subject" class="label-F">Asunto</label>
+        <input type="text" name="subject" id="subject" class="input-F">
+
+        <label for="coments" class="label-F">Comentarios</label>
+        <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
+
+        <input class="btn-F" type="submit" value="Enviar">
+
+        <input type="hidden" name="_next" value="../Contacto/contacto.html" class="input-F">
+
+        <input type="hidden" name="_captcha" value="false" class="input-F">
+      </form>
+    </div>
+  </div>
+
+  <section class="contact">
+    <div class="contact-info">
+      <div class="first-info">
+        <img src="../Imagenes/logo.png" alt="">
+        <p>Pedro de Alba, Niños Héroes, Ciudad Universitaria, <br> 66451 San Nicolás de los Garza, N.L. </br></p>
+        <p>Teléfono: (+52) 314 123 4567</p>
+        <p>Correo: cuidadoconelbisonte@gmail.com</p>
+
+        <div class="social-icon">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-youtube'></i></a>
+          <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+      </div>
+
+      <div class="second-info">
+        <h4>Soporte</h4>
+        <p><a href="../Contacto/contacto.html">Contactanos</a></p>
+      </div>
+
+      <div class="third-info">
+        <h4>Tienda</h4>
+        <p><a href="../niños/NiñosCamisas.html">Camisas</a></p>
+        <p><a href="../niñas/NiñasBlusas.html">Blusas</a></p>
+        <p><a href="../niños/NiñosZapatos.html">Zapatos</a></p>
+      </div>
+
+      <div class="fourth-info">
+        <h4>Empresa</h4>
+        <p><a href="../Contacto/quienS.html">Quienes somos</a></p>
+        <p><a href="../Contacto/coleccion.html">Coleccion de invierno</a></p>
+        <p><a href="../Contacto/coleccionO.html">Coleccion de otoño</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="end-text">
+    <p>Copyright © @2023. All Rights Reserver</p>
+  </div>
+  <script src="../script.js"></script>
+
+</body>
+
+</HTML>
